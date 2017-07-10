@@ -4,12 +4,15 @@
   "description": "Transform direction aware CSS properties and values",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test/test.js"
   },
   "author": "wpf500",
   "license": "ISC",
   "dependencies": {
     "css-selector-splitter": "^0.1.2",
     "postcss": "^6.0.6"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0"
   }
 }

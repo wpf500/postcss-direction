@@ -1,0 +1,84 @@
+.foo {
+    color: red;
+}html[dir=ltr] .foo {
+    padding-left: 10px;
+    left: 20px;
+}html[dir=rtl] .foo {
+    padding-right: 10px;
+    right: 20px;
+}
+
+.bar {
+    margin-left: blue;
+}
+
+@media (min-width: 100px) {
+    .bar {
+    }
+    html[dir=ltr] .bar {
+        padding-right: 10px;
+        float: left;
+    }
+    html[dir=rtl] .bar {
+        padding-left: 10px;
+        float: right;
+    }
+}
+
+.start {
+}
+
+html[dir=ltr] .start {
+    text-align: left;
+    float: left;
+    clear: left;
+    border-left: 1px solid black;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-left: 10px;
+    left: 10px;
+    padding-left: 10px;
+}
+
+html[dir=rtl] .start {
+    text-align: right;
+    float: right;
+    clear: right;
+    border-right: 1px solid black;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    margin-right: 10px;
+    right: 10px;
+    padding-right: 10px;
+}
+
+.end {
+}
+
+html[dir=ltr] .end {
+    text-align: right;
+    float: right;
+    clear: right;
+    border-right: 1px solid black;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    margin-right: 10px;
+    right: 10px;
+    padding-right: 10px;
+}
+
+html[dir=rtl] .end {
+    text-align: left;
+    float: left;
+    clear: left;
+    border-left: 1px solid black;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-left: 10px;
+    left: 10px;
+    padding-left: 10px;
+}

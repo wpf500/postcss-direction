@@ -1,9 +1,22 @@
 var postcss = require('postcss');
 var splitSelector = require('css-selector-splitter');
 
-var PROPS = ['padding-inline-start', 'padding-inline-end',
-    'border-inline-start', 'border-inline-end', 'margin-inline-start',
-    'margin-inline-end', 'offset-inline-start', 'offset-inline-end'];
+var PROPS = [
+    'border-inline-end',
+    'border-inline-end-color',
+    'border-inline-end-style',
+    'border-inline-end-width',
+    'border-inline-start',
+    'border-inline-start-color',
+    'border-inline-start-style',
+    'border-inline-start-width',
+    'margin-inline-end',
+    'margin-inline-start',
+    'offset-inline-end',
+    'offset-inline-start',
+    'padding-inline-end',
+    'padding-inline-start'
+];
 
 function isDirectionDecl(node) {
     if (node.type === 'decl') {
@@ -32,6 +45,12 @@ function transformDecl(isRTL, decl) {
         case 'clear':
         case 'text-align':
             newValue = decl.value.replace('start', start).replace('end', end);
+            break;
+        case 'offset-inline-start':
+            newProp = start;
+            break;
+        case 'offset-inline-end':
+            newProp = end;
             break;
         default:
             newProp = decl.prop.replace('inline-start', start).replace('inline-end', end);

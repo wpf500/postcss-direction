@@ -1,0 +1,42 @@
+.foo {
+    color: red;
+    padding-inline-start: 10px;
+    offset-inline-start: 20px;
+}
+
+.bar {
+    margin-left: blue;
+}
+
+@media (min-width: 100px) {
+    .bar {
+        padding-inline-end: 10px;
+        float: start;
+    }
+}
+
+.start {
+    text-align: start;
+    float: start;
+    clear: start;
+    border-inline-start: 1px solid black;
+    border-inline-start-color: black;
+    border-inline-start-style: solid;
+    border-inline-start-width: 1px;
+    margin-inline-start: 10px;
+    offset-inline-start: 10px;
+    padding-inline-start: 10px;
+}
+
+.end {
+    text-align: end;
+    float: end;
+    clear: end;
+    border-inline-end: 1px solid black;
+    border-inline-end-color: black;
+    border-inline-end-style: solid;
+    border-inline-end-width: 1px;
+    margin-inline-end: 10px;
+    offset-inline-end: 10px;
+    padding-inline-end: 10px;
+}
