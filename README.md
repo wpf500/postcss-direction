@@ -1,4 +1,10 @@
-Transform direction aware CSS properties and values.
+Transform logical properties to their physical property equivalents, wrapped
+by direction detection.
+
+See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties
+for more details
+
+## Example
 
 ```css
 .foo {
