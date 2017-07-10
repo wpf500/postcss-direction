@@ -1,0 +1,15 @@
+{
+  "name": "postcss-direction",
+  "version": "1.0.0",
+  "description": "Transform direction aware CSS properties and values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wpf500",
+  "license": "ISC",
+  "dependencies": {
+    "css-selector-splitter": "^0.1.2",
+    "postcss": "^6.0.6"
+  }
+}
